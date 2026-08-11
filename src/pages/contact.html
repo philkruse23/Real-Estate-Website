@@ -1,0 +1,87 @@
+<!--META
+TITLE: Contact Phil Kruse | Lakefront Real Estate
+DESC: Get in touch with Phil Kruse about buying or selling lakefront real estate.
+PATH: /contact
+NAV: contact
+SCHEMA: 
+-->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+{{HEAD}}
+</head>
+<body>
+{{NAV}}
+
+<main>
+  <section class="section--tight section" style="padding-top: var(--space-5);">
+    <div class="wrap">
+      <span class="eyebrow">Contact</span>
+      <h1>Let's Talk</h1>
+      <p class="lede">[PLACEHOLDER: A short, warm line inviting people to reach out — buying, selling, or just have questions about the lake market.]</p>
+    </div>
+  </section>
+
+  <section class="section">
+    <div class="wrap grid-2">
+      <div>
+        <!--
+          FORM HANDLING NOTE:
+          This is a static site, so the form needs a form-processing service.
+          Two easy free/low-cost options that work well with Cloudflare Pages:
+            1. Formspree (formspree.io) — sign up, get a form endpoint, paste it
+               into the form's "action" attribute below.
+            2. Cloudflare Pages Functions — a small serverless function that
+               emails you on submit (ask Claude Code to set this up once your
+               Cloudflare account exists).
+          Until one of these is connected, this form will not send anywhere.
+        -->
+        <form action="https://formspree.io/f/YOUR_FORM_ID" method="POST">
+          <div class="form-field">
+            <label for="name">Name</label>
+            <input type="text" id="name" name="name" required>
+          </div>
+          <div class="form-field">
+            <label for="email">Email</label>
+            <input type="email" id="email" name="email" required>
+          </div>
+          <div class="form-field">
+            <label for="phone">Phone (optional)</label>
+            <input type="tel" id="phone" name="phone">
+          </div>
+          <div class="form-field">
+            <label for="interest">I'm interested in</label>
+            <select id="interest" name="interest">
+              <option>Buying a lakefront home</option>
+              <option>Selling a lakefront home</option>
+              <option>General question</option>
+            </select>
+          </div>
+          <div class="form-field">
+            <label for="message">Message</label>
+            <textarea id="message" name="message" required></textarea>
+          </div>
+          <button type="submit" class="btn btn--gold">Send Message</button>
+        </form>
+      </div>
+
+      <div>
+        <div class="card">
+          <h3>Direct Contact</h3>
+          <p style="margin-bottom: 0.5rem;"><strong>Email:</strong> <a href="mailto:phil@iamphilkruse.com" style="color: var(--gold); text-decoration: underline;">phil@iamphilkruse.com</a></p>
+          <p style="margin-bottom: 0.5rem;"><strong>Phone:</strong> <a href="tel:+10000000000" style="color: var(--gold); text-decoration: underline;">(000) 000-0000</a></p>
+          <p style="margin-bottom: 0;"><strong>Serving:</strong> Orlando's lakefront &amp; luxury markets</p>
+        </div>
+        <div class="card" style="margin-top: var(--space-2);">
+          <h3>Prefer the Newsletter?</h3>
+          <p>Get lakefront market updates every Friday.</p>
+          <a href="/#newsletter" class="btn btn--outline-navy">Subscribe</a>
+        </div>
+      </div>
+    </div>
+  </section>
+</main>
+
+{{FOOTER}}
+</body>
+</html>
