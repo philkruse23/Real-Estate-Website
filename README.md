@@ -79,30 +79,51 @@ injects the shared head/nav/footer, and writes finished pages into
 serves `.html` files at clean URLs automatically (`about.html` → `/about`),
 so don't worry about `.html` showing up in links.
 
-## Adding a new blog post (for your VA)
+## Adding a new blog post — superseded, see "Blog CMS" section below
 
-1. Duplicate `src/blog/sample-post.html`, rename it to something like
-   `src/blog/your-post-slug.html`.
-2. Update the `<!--META-->` block at the top: `TITLE`, `DESC`, and `PATH`
-   (e.g. `/blog/your-post-slug`).
-3. Replace the placeholder headline, date, category, and body content.
-4. Open `src/blog/index.html`, copy one `<a class="post-card">` block, and
-   add it to the **top** of the list with the new post's title, link, image,
-   and teaser line.
-5. Commit and push to GitHub — Cloudflare deploys it automatically.
+(This section used to describe manually duplicating HTML files. That's no
+longer how blog posts work — see the "Blog CMS (Sveltia CMS)" section
+further down for the current process, either via the CMS at `/admin` once
+set up, or by manually adding a `.md` file to `content/posts/` in the
+meantime.)
 
-No coding required beyond editing text inside the existing HTML tags.
+## Contact form — ✅ live
+
+The contact form in `src/pages/contact.html` is wired to Web3Forms (free
+forever, 250 submissions/month). Submissions arrive directly by email —
+no dashboard or login needed.
+
+To also auto-add contact form submissions to the ConvertKit list: set up a
+free Zapier account, create a Zap with trigger "New Submission" in
+Web3Forms → action "Create or Update Subscriber" in Kit/ConvertKit,
+mapping Name/Email/Phone. Optionally tag these as "Contact Form Lead" to
+distinguish from newsletter-only subscribers.
+
+## SEO checklist before launch
+
+- [x] Meta titles/descriptions on every page
+- [x] Open Graph + Twitter Card tags
+- [x] JSON-LD structured data (Home, About, Lakefront Specialty, blog posts)
+- [x] Auto-generated sitemap.xml (regenerates every build, includes new blog posts automatically)
+- [x] robots.txt pointing to the sitemap
+- [x] Google Business Profile already set up — double check its website link points
+      to iamphilkruse.com once the domain switch happens, not the old SiteGround URL
+- [ ] **Add real, descriptive alt text to every image once real photos replace
+      placeholders** — especially blog post images. Empty alt text on
+      placeholders is fine for now, but this needs to be done for every real
+      image that goes up (accessibility + image search ranking).
 
 ## Lead magnets (in progress — not yet built)
 
-Plan: three separate free downloadable guides, each with its own ConvertKit
+Plan: separate free downloadable guides, each with its own ConvertKit
 form/automation (distinct from the general Friday newsletter signup), so
 subscribers can be tagged by which guide they downloaded:
 
 1. **Buyer's Guide** (general, not lakefront-specific) — homepage "Buyers" card
 2. **Seller's Guide** (general, not lakefront-specific) — homepage "Sellers" card
-3. **Lakefront Buying & Selling Guide** — homepage "Lake Lovers" card, covers
-   both buyers and sellers in two sections/columns within one PDF
+3. **Lakefront Buying & Selling Guide** — homepage "Lake Lovers" card AND the
+   button on the Lakefront Specialty page — covers both buyers and sellers on
+   the water in one PDF
 
 **Still needed before these can go live:**
 - VA to design all three PDF flyers/guides (content + layout)
@@ -110,8 +131,73 @@ subscribers can be tagged by which guide they downloaded:
   delivers the correct PDF automatically on signup and tags the subscriber
   accordingly — ask Claude for help setting these up in ConvertKit once the
   PDF content exists
-- Once each ConvertKit embed code exists, swap it into the matching homepage
-  card (currently placeholder buttons — see `src/pages/index.html`)
+- Once each ConvertKit embed code exists, swap it into the matching placeholder
+  buttons (currently linking to `#`) in `src/pages/index.html` and
+  `src/pages/lakefront-specialty.html`
+
+**Future idea (not built, just logged):** a scroll-triggered or time-delayed
+popup promoting the free Lakefront Guide as visitors read the Lakefront
+Specialty page. Would need a JS modal + trigger logic + the ConvertKit
+integration above. Revisit once the guide itself exists.
+
+## Lake chain blog posts (needed for Lakefront Specialty page)
+
+The "Phil's Preferred Lake Chains" section on the Lakefront Specialty page
+has three buttons — Conway Chain of Lakes, Winter Park Chain of Lakes, Butler
+Chain of Lakes — that currently link to `#` (placeholder). These need to
+point to three real blog posts, one per chain, once written or migrated from
+the old WordPress content. **Reminder: get this done, either by Claude or
+the VA, before launch** — see `src/pages/lakefront-specialty.html` for the
+exact spot to update once the post URLs exist.
+
+## ConvertKit form cleanup (action needed in ConvertKit, not in this code)
+
+The embedded newsletter form (data-uid 04b1973276) currently shows a
+redundant "First Name / Last Name" field alongside the main "Name" field,
+plus three unnecessary checkboxes. Fix this directly in ConvertKit: Grow →
+Landing Pages & Forms → edit the form → remove the duplicate name field and
+the three checkboxes, rename "Name" to "First & Last Name." No code change
+needed here — the embed pulls live from ConvertKit.
+
+## Blog CMS (Sveltia CMS) — for your VA
+
+Blog posts are no longer edited as raw HTML files. They're simple Markdown
+files with a small metadata header, stored in `content/posts/`, and the
+build script automatically turns each one into a fully styled page AND adds
+it to both the blog listing page and the homepage's "Here's the Latest for
+Orlando" section — no manual card-editing required anywhere.
+
+**For your VA:** once the one-time setup below is done, she'll use a simple
+web-based editor at `iamphilkruse.com/admin` — log in, click "New Blog
+Posts," fill in a title, category, one-sentence teaser, cover photo, and
+write the post in a normal rich-text box (no HTML). Clicking "Publish"
+automatically saves it to GitHub and the live site rebuilds within about a
+minute. No GitHub, no raw code, ever.
+
+**One-time setup (you, not the VA — takes about 15-20 minutes):**
+
+1. Deploy the free OAuth bridge to Cloudflare Workers: go to
+   github.com/sveltia/sveltia-cms-auth, and either fork it or follow its
+   README to deploy it to your Cloudflare account (Workers & Pages → Create
+   → import from this GitHub repo). Once deployed, note the Worker's URL —
+   it'll look like `https://sveltia-cms-auth.<something>.workers.dev`.
+2. In GitHub, go to Settings → Developer settings → OAuth Apps → New OAuth
+   App. Set the Homepage URL to `https://www.iamphilkruse.com` and the
+   Authorization callback URL to `<your Worker URL>/callback`. Save, then
+   copy the Client ID and generate/copy a Client Secret.
+3. Back in Cloudflare, open your deployed Worker's settings → Variables, and
+   add the Client ID and Client Secret as environment variables (the exact
+   variable names are in the sveltia-cms-auth README).
+4. Open `admin/config.yml` in this repo and replace
+   `https://REPLACE-WITH-YOUR-WORKER.workers.dev` with your actual Worker
+   URL from step 1.
+5. Go to `iamphilkruse.com/admin`, click "Login with GitHub," and confirm
+   you can see the Blog Posts collection. Ask Claude for help if anything
+   doesn't connect — screenshots of any error are the fastest way to debug it.
+
+Once this works, only people you've given GitHub repo access to can log in
+and publish — give your VA "Write" access to the repo on GitHub
+(Settings → Collaborators) so she can log into the CMS too.
 
 ## Domain strategy
 

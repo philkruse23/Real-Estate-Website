@@ -1,6 +1,6 @@
 <!--META
-TITLE: Blog | Phil Kruse Lakefront Real Estate
-DESC: Lakefront real estate insights, market updates, and local guides from Phil Kruse.
+TITLE: All Things Orlando | Phil Kruse
+DESC: Orlando lifestyle, local guides, and real estate insights from Phil Kruse, including lakefront and luxury living.
 PATH: /blog
 NAV: blog
 SCHEMA: 
@@ -14,30 +14,19 @@ SCHEMA:
 {{NAV}}
 
 <main>
-  <section class="section--tight section" style="padding-top: var(--space-5);">
+  <section class="hero" style="background-image: url('/images/blog-hero-orlando.jpg'); background-position: center 25%;">
     <div class="wrap">
-      <span class="eyebrow">Blog</span>
-      <h1>Lakefront Insights</h1>
-      <p class="lede">[PLACEHOLDER: A short line describing what readers will find here — market updates, buying/selling tips, lake-life guides.]</p>
+      <div class="hero-textbox">
+        <span class="eyebrow" style="color: var(--gold-light);">Blog</span>
+        <h1>All Things Orlando</h1>
+        <p>Orlando is the greatest city in the U.S., and this is where Phil shares why — lifestyle, local guides, and real estate insights.</p>
+      </div>
     </div>
   </section>
 
   <section class="section">
     <div class="wrap">
-      <!--
-        VA INSTRUCTIONS:
-        To add a new post card here, copy one <a class="post-card"> block
-        below, update the href, image, meta line, title, and teaser text.
-        Newest posts should go first (top of the list).
-      -->
-      <div class="grid-3">
-        <a href="/blog/sample-post" class="post-card">
-          <div class="post-card__img"><img src="/images/blog-placeholder.jpg" alt=""></div>
-          <span class="post-card__meta">[Category] · [Month Day, Year]</span>
-          <h3>[PLACEHOLDER: Sample Blog Post Title]</h3>
-          <p>[PLACEHOLDER: One or two sentence teaser.]</p>
-        </a>
-      </div>
+      {{POST_CARDS}}
     </div>
   </section>
 </main>

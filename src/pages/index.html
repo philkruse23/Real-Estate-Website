@@ -26,18 +26,17 @@ SCHEMA: <script type="application/ld+json">
 <main>
 
   <!-- HERO -->
-  <section class="split-hero">
-    <div class="split-hero__text">
-      <span class="eyebrow" style="color: var(--gold-light);">Orlando Lakefront &amp; Luxury Specialist</span>
-      <h1>Home Is Where Your Story Begins</h1>
-      <p>For your next chapter, choose excellence.</p>
-      <div class="hero-actions">
-        <a href="/lakefront-specialty" class="btn btn--gold">Selling/Buying Lakefront</a>
-        <a href="#newsletter" class="btn btn--outline">Orlando Weekend Events Newsletter</a>
+  <section class="hero" style="background-image: url('/images/hero-phil.jpg');">
+    <div class="wrap">
+      <div class="hero-textbox">
+        <span class="eyebrow" style="color: var(--gold-light);">Orlando Lakefront &amp; Luxury Specialist</span>
+        <h1>Home Is Where Your Story Begins</h1>
+        <p>For your next chapter, choose excellence.</p>
+        <div class="hero-actions">
+          <a href="/lakefront-specialty" class="btn btn--gold">Selling/Buying Lakefront</a>
+          <a href="#newsletter" class="btn btn--outline">Orlando Weekend Events Newsletter</a>
+        </div>
       </div>
-    </div>
-    <div class="split-hero__photo">
-      <img src="/images/hero-phil.jpg" alt="Phil Kruse at Lake Eola, Orlando">
     </div>
   </section>
 
@@ -90,28 +89,11 @@ SCHEMA: <script type="application/ld+json">
     <div class="wrap">
       <span class="eyebrow">From the Blog</span>
       <h2>Here's the Latest for Orlando</h2>
-      <div class="grid-3" style="margin-top: var(--space-4);">
-        <a href="/blog/sample-post" class="post-card">
-          <div class="post-card__img"><img src="/images/blog-placeholder.jpg" alt=""></div>
-          <span class="post-card__meta">[Category] · [Date]</span>
-          <h3>[PLACEHOLDER: Sample Blog Post Title]</h3>
-          <p>[PLACEHOLDER: One-sentence teaser of the post.]</p>
-        </a>
-        <a href="/blog" class="post-card">
-          <div class="post-card__img"><img src="/images/blog-placeholder.jpg" alt=""></div>
-          <span class="post-card__meta">[Category] · [Date]</span>
-          <h3>[PLACEHOLDER: Second Post Title]</h3>
-          <p>[PLACEHOLDER: One-sentence teaser of the post.]</p>
-        </a>
-        <a href="/blog" class="post-card">
-          <div class="post-card__img"><img src="/images/blog-placeholder.jpg" alt=""></div>
-          <span class="post-card__meta">[Category] · [Date]</span>
-          <h3>[PLACEHOLDER: Third Post Title]</h3>
-          <p>[PLACEHOLDER: One-sentence teaser of the post.]</p>
-        </a>
+      <div style="margin-top: var(--space-4);">
+        {{RECENT_POST_CARDS}}
       </div>
       <div class="text-center" style="margin-top: var(--space-4);">
-        <a href="/blog" class="btn btn--outline-navy">Read All Posts</a>
+        <a href="/blog" class="btn btn--outline-navy">Read All Blog Posts</a>
       </div>
     </div>
   </section>
@@ -121,7 +103,9 @@ SCHEMA: <script type="application/ld+json">
   <!-- QUICK LINK: CHARITIES -->
   <section class="section--tight section text-center">
     <div class="wrap">
-      <a href="/charities" class="btn btn--outline-navy">Giving Back →</a>
+      <h2>Partnering With Phil Means Giving Back</h2>
+      <p class="lede mx-auto">A portion of every one of Phil's real estate commissions goes to charity — the cause of your choice, or New Image Youth Center, where Phil volunteers.</p>
+      <a href="/charities" class="btn btn--outline-navy" style="margin-top: var(--space-2);">Giving Back →</a>
     </div>
   </section>
 

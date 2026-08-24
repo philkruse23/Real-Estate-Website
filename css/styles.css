@@ -198,15 +198,33 @@ a:focus-visible, button:focus-visible, input:focus-visible, textarea:focus-visib
   min-height: min(88vh, 680px);
   display: flex;
   align-items: flex-end;
-  background: linear-gradient(180deg, rgba(22,42,86,0.35) 0%, rgba(22,42,86,0.82) 100%), var(--navy);
+  background: linear-gradient(180deg, rgba(22,42,86,0.15) 0%, rgba(22,42,86,0.45) 100%), var(--navy);
   background-size: cover;
-  background-position: center;
+  background-position: center 15%;
   color: var(--white);
 }
-.hero .wrap { padding-bottom: var(--space-6); padding-top: var(--space-6); }
-.hero h1 { color: var(--white); max-width: 16ch; }
-.hero p { max-width: 46ch; font-size: 1.15rem; color: rgba(255,255,255,0.92); }
+.hero .wrap { padding-bottom: var(--space-5); padding-top: var(--space-6); }
+.hero-textbox {
+  background: rgba(15, 23, 42, 0.6);
+  backdrop-filter: blur(8px);
+  -webkit-backdrop-filter: blur(8px);
+  border-radius: var(--radius);
+  padding: var(--space-3) var(--space-4);
+  display: inline-block;
+  max-width: 100%;
+}
+.hero h1 {
+  color: var(--white);
+  max-width: 20ch;
+  font-size: clamp(2.6rem, 7vw, 5.2rem);
+  text-shadow: 0 2px 16px rgba(0,0,0,0.35);
+}
+.hero p { max-width: 50ch; font-size: 1.15rem; color: rgba(255,255,255,0.95); text-shadow: 0 1px 8px rgba(0,0,0,0.3); }
 .hero-actions { display: flex; gap: var(--space-2); flex-wrap: wrap; margin-top: var(--space-3); }
+@media (max-width: 600px) {
+  .hero { align-items: flex-end; min-height: min(75vh, 560px); }
+  .hero .wrap { padding-bottom: var(--space-4); }
+}
 
 /* ---------- Split hero (photo intact, no overlay) ---------- */
 .split-hero {
@@ -378,6 +396,16 @@ a:focus-visible, button:focus-visible, input:focus-visible, textarea:focus-visib
   max-width: 46ch;
   margin: var(--space-2) auto;
 }
+.site-footer--minimal .footer-contact {
+  font-family: var(--font-ui);
+  font-size: 1.15rem;
+  font-weight: 700;
+  color: var(--white);
+  margin: 0 auto var(--space-2);
+}
+.site-footer--minimal .footer-contact a { color: var(--gold-light); }
+.site-footer--minimal .footer-contact a:hover { color: var(--gold); text-decoration: underline; }
+.site-footer--minimal .footer-contact span { color: rgba(255,255,255,0.4); margin: 0 0.5rem; }
 .site-footer--minimal .social-row { justify-content: center; }
 .site-footer--minimal .footer-links {
   display: flex;

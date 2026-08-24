@@ -1,0 +1,25 @@
+backend:
+  name: github
+  repo: philkruse23/Real-Estate-Website
+  branch: main
+  # IMPORTANT: replace this with your deployed sveltia-cms-auth Worker URL
+  # once you've completed the OAuth setup steps (see README.md).
+  base_url: https://REPLACE-WITH-YOUR-WORKER.workers.dev
+
+media_folder: "images"
+public_folder: "/images"
+
+collections:
+  - name: "posts"
+    label: "Blog Posts"
+    label_singular: "Blog Post"
+    folder: "content/posts"
+    create: true
+    slug: "{{slug}}"
+    fields:
+      - { label: "Title", name: "title", widget: "string" }
+      - { label: "Date", name: "date", widget: "datetime", format: "YYYY-MM-DD", date_format: "YYYY-MM-DD", time_format: false }
+      - { label: "Category", name: "category", widget: "string", hint: "e.g. Market Update, Neighborhood Guide, Orlando Life" }
+      - { label: "Teaser (short summary for the blog listing page)", name: "teaser", widget: "text" }
+      - { label: "Cover Image", name: "image", widget: "image" }
+      - { label: "Body", name: "body", widget: "markdown" }

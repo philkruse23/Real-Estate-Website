@@ -17,8 +17,7 @@ SCHEMA:
   <section class="section--tight section" style="padding-top: var(--space-5);">
     <div class="wrap">
       <span class="eyebrow">Contact</span>
-      <h1>Let's Talk</h1>
-      <p class="lede">[PLACEHOLDER: A short, warm line inviting people to reach out — buying, selling, or just have questions about the lake market.]</p>
+      <h1>Life Is About Relationships</h1>
     </div>
   </section>
 
@@ -27,16 +26,19 @@ SCHEMA:
       <div>
         <!--
           FORM HANDLING NOTE:
-          This is a static site, so the form needs a form-processing service.
-          Two easy free/low-cost options that work well with Cloudflare Pages:
-            1. Formspree (formspree.io) — sign up, get a form endpoint, paste it
-               into the form's "action" attribute below.
-            2. Cloudflare Pages Functions — a small serverless function that
-               emails you on submit (ask Claude Code to set this up once your
-               Cloudflare account exists).
-          Until one of these is connected, this form will not send anywhere.
+          This form uses Web3Forms (web3forms.com) — genuinely free forever,
+          250 submissions/month, no account or credit card required. Get your
+          access key at web3forms.com (just enter an email, no signup), then
+          paste it into the hidden input below in place of
+          YOUR_WEB3FORMS_ACCESS_KEY.
+
+          It also auto-enrolls submitters into the ConvertKit "Orlando
+          Weekend Events Newsletter" via a small script below (no Zapier
+          needed — uses ConvertKit's own public form API).
         -->
-        <form action="https://formspree.io/f/YOUR_FORM_ID" method="POST">
+        <form action="https://api.web3forms.com/submit" method="POST" id="contact-form">
+          <input type="hidden" name="access_key" value="6e1a7eba-8479-440f-b578-360a2ba61a7e">
+          <input type="hidden" name="subject" value="New Contact Form Submission — iamphilkruse.com">
           <div class="form-field">
             <label for="name">Name</label>
             <input type="text" id="name" name="name" required>
@@ -52,9 +54,9 @@ SCHEMA:
           <div class="form-field">
             <label for="interest">I'm interested in</label>
             <select id="interest" name="interest">
-              <option>Buying a lakefront home</option>
-              <option>Selling a lakefront home</option>
-              <option>General question</option>
+              <option>Lakefront real estate</option>
+              <option>General real estate</option>
+              <option>Other</option>
             </select>
           </div>
           <div class="form-field">
@@ -62,15 +64,37 @@ SCHEMA:
             <textarea id="message" name="message" required></textarea>
           </div>
           <button type="submit" class="btn btn--gold">Send Message</button>
+          <p style="font-size: 0.8rem; color: var(--ink-soft); margin-top: 0.5rem; margin-bottom: 0;">By submitting, you'll also be added to Phil's Orlando Weekend Events Newsletter.</p>
         </form>
+        <script>
+          // Silently enrolls the submitter into the ConvertKit newsletter
+          // form (04b1973276) at the same moment the contact form is sent
+          // to Web3Forms. Uses ConvertKit's public form-subscribe API —
+          // safe to call from the browser, no secret key involved.
+          document.getElementById('contact-form').addEventListener('submit', function () {
+            var email = document.getElementById('email').value;
+            var name = document.getElementById('name').value;
+            if (!email) return;
+            fetch('https://api.convertkit.com/v3/forms/04b1973276/subscribe', {
+              method: 'POST',
+              headers: { 'Content-Type': 'application/json; charset=utf-8' },
+              body: JSON.stringify({
+                api_key: 'FAxRKymSthLWWLcor2U2xw',
+                email: email,
+                first_name: name
+              }),
+              keepalive: true
+            }).catch(function () { /* fail silently — Web3Forms email is the priority */ });
+          });
+        </script>
       </div>
 
       <div>
         <div class="card">
           <h3>Direct Contact</h3>
-          <p style="margin-bottom: 0.5rem;"><strong>Email:</strong> <a href="mailto:phil@iamphilkruse.com" style="color: var(--gold); text-decoration: underline;">phil@iamphilkruse.com</a></p>
-          <p style="margin-bottom: 0.5rem;"><strong>Phone:</strong> <a href="tel:+10000000000" style="color: var(--gold); text-decoration: underline;">(000) 000-0000</a></p>
-          <p style="margin-bottom: 0;"><strong>Serving:</strong> Orlando's lakefront &amp; luxury markets</p>
+          <p style="margin-bottom: 0.5rem;"><strong>Email:</strong> <a href="mailto:philkrusehomes@gmail.com" style="color: var(--gold); text-decoration: underline;">philkrusehomes@gmail.com</a></p>
+          <p style="margin-bottom: 0.5rem;"><strong>Phone:</strong> <a href="tel:+14077828276" style="color: var(--gold); text-decoration: underline;">(407) 782-8276</a></p>
+          <p style="margin-bottom: 0;"><strong>Instagram:</strong> <a href="https://www.instagram.com/_philkruse/" style="color: var(--gold); text-decoration: underline;">@_philkruse</a></p>
         </div>
         <div class="card" style="margin-top: var(--space-2);">
           <h3>Prefer the Newsletter?</h3>
