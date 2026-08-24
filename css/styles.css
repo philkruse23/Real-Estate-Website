@@ -205,9 +205,9 @@ a:focus-visible, button:focus-visible, input:focus-visible, textarea:focus-visib
 }
 .hero .wrap { padding-bottom: var(--space-5); padding-top: var(--space-6); }
 .hero-textbox {
-  background: rgba(15, 23, 42, 0.6);
-  backdrop-filter: blur(8px);
-  -webkit-backdrop-filter: blur(8px);
+  background: rgba(15, 23, 42, 0.32);
+  backdrop-filter: blur(4px);
+  -webkit-backdrop-filter: blur(4px);
   border-radius: var(--radius);
   padding: var(--space-3) var(--space-4);
   display: inline-block;
@@ -217,9 +217,9 @@ a:focus-visible, button:focus-visible, input:focus-visible, textarea:focus-visib
   color: var(--white);
   max-width: 20ch;
   font-size: clamp(2.6rem, 7vw, 5.2rem);
-  text-shadow: 0 2px 16px rgba(0,0,0,0.35);
+  text-shadow: 0 2px 6px rgba(0,0,0,0.85), 0 0 24px rgba(0,0,0,0.5);
 }
-.hero p { max-width: 50ch; font-size: 1.15rem; color: rgba(255,255,255,0.95); text-shadow: 0 1px 8px rgba(0,0,0,0.3); }
+.hero p { max-width: 50ch; font-size: 1.15rem; color: rgba(255,255,255,0.98); text-shadow: 0 1px 6px rgba(0,0,0,0.8), 0 0 16px rgba(0,0,0,0.5); }
 .hero-actions { display: flex; gap: var(--space-2); flex-wrap: wrap; margin-top: var(--space-3); }
 @media (max-width: 600px) {
   .hero { align-items: flex-end; min-height: min(75vh, 560px); }
