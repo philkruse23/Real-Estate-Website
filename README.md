@@ -93,6 +93,26 @@ so don't worry about `.html` showing up in links.
 
 No coding required beyond editing text inside the existing HTML tags.
 
+## Lead magnets (in progress — not yet built)
+
+Plan: three separate free downloadable guides, each with its own ConvertKit
+form/automation (distinct from the general Friday newsletter signup), so
+subscribers can be tagged by which guide they downloaded:
+
+1. **Buyer's Guide** (general, not lakefront-specific) — homepage "Buyers" card
+2. **Seller's Guide** (general, not lakefront-specific) — homepage "Sellers" card
+3. **Lakefront Buying & Selling Guide** — homepage "Lake Lovers" card, covers
+   both buyers and sellers in two sections/columns within one PDF
+
+**Still needed before these can go live:**
+- VA to design all three PDF flyers/guides (content + layout)
+- Three separate ConvertKit forms + automations set up (one per guide) so each
+  delivers the correct PDF automatically on signup and tags the subscriber
+  accordingly — ask Claude for help setting these up in ConvertKit once the
+  PDF content exists
+- Once each ConvertKit embed code exists, swap it into the matching homepage
+  card (currently placeholder buttons — see `src/pages/index.html`)
+
 ## Domain strategy
 
 Primary domain: **iamphilkruse.com**

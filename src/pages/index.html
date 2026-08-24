@@ -26,36 +26,48 @@ SCHEMA: <script type="application/ld+json">
 <main>
 
   <!-- HERO -->
-  <section class="hero" style="background-image: linear-gradient(180deg, rgba(22,42,86,0.35) 0%, rgba(22,42,86,0.85) 100%), url('/images/hero-lake.jpg');">
-    <div class="wrap">
+  <section class="split-hero">
+    <div class="split-hero__text">
       <span class="eyebrow" style="color: var(--gold-light);">Orlando Lakefront &amp; Luxury Specialist</span>
-      <h1>Your Life on the Water Starts Here</h1>
-      <p>Phil Kruse has called Orlando home since 2001. As a lakefront and luxury real estate specialist with over a decade of experience, he knows every lake, every neighborhood, and every hidden gem this city has to offer.</p>
+      <h1>Home Is Where Your Story Begins</h1>
+      <p>For your next chapter, choose excellence.</p>
       <div class="hero-actions">
-        <a href="/lakefront-specialty" class="btn btn--gold">Explore Lakefront Specialty</a>
-        <a href="#newsletter" class="btn btn--outline">Get the Friday Newsletter</a>
+        <a href="/lakefront-specialty" class="btn btn--gold">Selling/Buying Lakefront</a>
+        <a href="#newsletter" class="btn btn--outline">Orlando Weekend Events Newsletter</a>
       </div>
+    </div>
+    <div class="split-hero__photo">
+      <img src="/images/hero-phil.jpg" alt="Phil Kruse at Lake Eola, Orlando">
     </div>
   </section>
 
   <!-- WHO I SERVE -->
-  <section class="section">
+  <section class="section--tight section">
     <div class="wrap">
       <span class="eyebrow">Who I Serve</span>
       <h2>Buyers, Sellers &amp; Lake Lovers</h2>
-      <p class="lede">Whether you're buying your first lakefront home, selling a luxury property, or thinking ahead to a second home on the water — Phil's local, hands-on approach fits.</p>
+      <p class="lede">My expertise for this city is matched only by my love for it — buying, selling, luxury, or lakefront.</p>
       <div class="grid-3" style="margin-top: var(--space-4);">
         <div class="card">
+          <span class="eyebrow">Free Guide</span>
           <h3>Buyers</h3>
-          <p>[PLACEHOLDER: What you do for lakefront and luxury buyers — e.g. access to off-market listings, understanding lake-specific issues like shoreline rights, docks, water quality.]</p>
+          <p>[PLACEHOLDER: Short line about the buyer's guide — what's inside.]</p>
+          <!-- LEAD MAGNET: swap this placeholder for the ConvertKit embed once the Buyer's Guide form/automation exists -->
+          <a href="#" class="btn btn--outline-navy" style="margin-top: 0.5rem;">Get the Free Buyer's Guide</a>
         </div>
         <div class="card">
+          <span class="eyebrow">Free Guide</span>
           <h3>Sellers</h3>
-          <p>[PLACEHOLDER: How you position and market a lakefront or luxury home to get top dollar.]</p>
+          <p>[PLACEHOLDER: Short line about the seller's guide — what's inside.]</p>
+          <!-- LEAD MAGNET: swap this placeholder for the ConvertKit embed once the Seller's Guide form/automation exists -->
+          <a href="#" class="btn btn--outline-navy" style="margin-top: 0.5rem;">Get the Free Seller's Guide</a>
         </div>
         <div class="card">
-          <h3>Second-Home &amp; Investment</h3>
-          <p>[PLACEHOLDER: Your experience with vacation/rental lakefront property, if applicable.]</p>
+          <span class="eyebrow">Free Guide</span>
+          <h3>Lake Lovers</h3>
+          <p>[PLACEHOLDER: Short line about the lakefront guide — buying &amp; selling on the water.]</p>
+          <!-- LEAD MAGNET: swap this placeholder for the ConvertKit embed once the Lakefront Guide form/automation exists -->
+          <a href="#" class="btn btn--outline-navy" style="margin-top: 0.5rem;">Get the Free Lakefront Guide</a>
         </div>
       </div>
     </div>
@@ -63,27 +75,13 @@ SCHEMA: <script type="application/ld+json">
 
   <svg class="shoreline" viewBox="0 0 1200 40" preserveAspectRatio="none" aria-hidden="true"><path d="M0,20 Q150,5 300,20 T600,20 T900,20 T1200,20"/></svg>
 
-  <!-- LAKEFRONT SPECIALTY TEASER -->
+  <!-- LAKEFRONT & LUXURY -->
   <section class="section section--navy">
     <div class="wrap">
       <span class="eyebrow" style="color: var(--gold-light);">The Specialty</span>
-      <h2>Lakefront &amp; Luxury Is All I Do</h2>
-      <p style="color: rgba(255,255,255,0.85); max-width: 58ch;">[PLACEHOLDER: 2-3 sentences establishing your niche credibility — which lake(s)/region, years of focus, number of lakefront transactions.]</p>
-      <div class="stat-row">
-        <div class="stat">
-          <div class="stat-number">2001</div>
-          <div class="stat-label">Called Orlando Home</div>
-        </div>
-        <div class="stat">
-          <div class="stat-number">10+ Yrs</div>
-          <div class="stat-label">Lakefront &amp; Luxury Specialist</div>
-        </div>
-        <div class="stat">
-          <div class="stat-number">Every Deal</div>
-          <div class="stat-label">A Portion Goes to Charity</div>
-        </div>
-      </div>
-      <a href="/lakefront-specialty" class="btn btn--outline" style="margin-top: var(--space-3);">See the Lakefront Page</a>
+      <h2>Lakefront &amp; Luxury Is My Passion</h2>
+      <p style="color: rgba(255,255,255,0.85); max-width: 58ch;">While I welcome any real estate transaction across Orlando, lakefront and luxury homes are where I truly shine — after all, I live on the water myself.</p>
+      <a href="/lakefront-specialty" class="btn btn--outline" style="margin-top: var(--space-2);">Selling/Buying Lakefront</a>
     </div>
   </section>
 
@@ -91,7 +89,7 @@ SCHEMA: <script type="application/ld+json">
   <section class="section">
     <div class="wrap">
       <span class="eyebrow">From the Blog</span>
-      <h2>Recent Insights</h2>
+      <h2>Here's the Latest for Orlando</h2>
       <div class="grid-3" style="margin-top: var(--space-4);">
         <a href="/blog/sample-post" class="post-card">
           <div class="post-card__img"><img src="/images/blog-placeholder.jpg" alt=""></div>
@@ -120,38 +118,25 @@ SCHEMA: <script type="application/ld+json">
 
   <svg class="shoreline" viewBox="0 0 1200 40" preserveAspectRatio="none" aria-hidden="true"><path d="M0,20 Q150,5 300,20 T600,20 T900,20 T1200,20"/></svg>
 
-  <!-- CHARITIES TEASER -->
-  <section class="section section--tight">
-    <div class="wrap grid-2">
-      <div>
-        <span class="eyebrow">Community</span>
-        <h2>Giving Back</h2>
-        <p class="lede">Real estate is how Phil makes a living. Giving back to Orlando is why he does it — a portion of every commission is donated to charity.</p>
-        <a href="/charities" class="btn btn--outline-navy" style="margin-top: var(--space-2);">See the Causes I Support</a>
-      </div>
-      <div class="card">
-        <p style="margin:0;">Every Wednesday during the school year, Phil volunteers at <strong>New Image Youth Center</strong>, teaching improv comedy to local kids.</p>
-      </div>
+  <!-- QUICK LINK: CHARITIES -->
+  <section class="section--tight section text-center">
+    <div class="wrap">
+      <a href="/charities" class="btn btn--outline-navy">Giving Back →</a>
     </div>
   </section>
 
   <!-- NEWSLETTER -->
   <section class="section" id="newsletter">
     <div class="wrap">
-      <div class="newsletter-box">
+      <div class="newsletter-box newsletter-box--single">
         <div>
           <span class="eyebrow" style="color: var(--gold-light);">Every Friday</span>
-          <h2 style="color: white;">The Lakefront Report</h2>
-          <p style="color: rgba(255,255,255,0.85);">[PLACEHOLDER: One or two sentences describing what subscribers get — new listings, market updates, lake-life tips.]</p>
+          <h2 style="color: white;">Orlando Weekend Events Newsletter</h2>
+          <p style="color: rgba(255,255,255,0.85);">My favorite weekend events, an uplifting Friday vibe, and one weekly real estate insight — all in one email.</p>
           <!-- Kit (ConvertKit) newsletter embed -->
           <div class="ck-form-wrap">
             <script async data-uid="04b1973276" src="https://phil-kruse.kit.com/04b1973276/index.js"></script>
           </div>
-        </div>
-        <div class="newsletter-preview">
-          <span class="eyebrow">Preview a Past Issue</span>
-          <h3 style="color:white; font-size:1.1rem; margin-bottom:0.5rem;">[PLACEHOLDER: Newsletter Issue Title]</h3>
-          <p style="color: rgba(255,255,255,0.85);">[PLACEHOLDER: Paste a short excerpt — 2-4 sentences — from a recent newsletter issue to give visitors a taste of what they'll get.]</p>
         </div>
       </div>
     </div>
