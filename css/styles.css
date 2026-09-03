@@ -295,6 +295,16 @@ a:focus-visible, button:focus-visible, input:focus-visible, textarea:focus-visib
 .post-card__meta { font-family: var(--font-ui); font-size: 0.82rem; color: var(--ink-soft); text-transform: uppercase; letter-spacing: 0.05em; }
 .post-card__img { aspect-ratio: 16/10; background: var(--border); border-radius: var(--radius); overflow: hidden; margin-bottom: var(--space-1); }
 .post-card__img img { width: 100%; height: 100%; object-fit: cover; }
+/* Media embedded in a blog post body */
+.post-figure { margin: var(--space-3) 0; }
+.post-figure img { width: 100%; border-radius: var(--radius); }
+article blockquote {
+  margin: var(--space-3) 0;
+  padding: var(--space-1) var(--space-3);
+  border-left: 3px solid var(--gold);
+  color: var(--ink-soft);
+  font-style: italic;
+}
 
 /* ---------- Newsletter ---------- */
 .newsletter-box {

@@ -101,11 +101,23 @@ def parse_frontmatter(source):
 
 def markdown_to_html(md):
     """Minimal Markdown -> HTML converter covering what Sveltia's markdown
-    widget produces: headers, bold/italic, links, paragraphs, lists."""
+    widget produces: headers, bold/italic, links, images, blockquotes,
+    bulleted and numbered lists, and paragraphs."""
     lines = md.replace("\r\n", "\n").split("\n")
     html_parts = []
     para_buffer = []
-    list_buffer = []
+    ul_buffer = []
+    ol_buffer = []
+    quote_buffer = []
+
+    def inline(text):
+        # Images first, so ![alt](src) isn't mistaken for a plain [text](link).
+        text = re.sub(r"!\[(.*?)\]\((.+?)\)",
+                      r'<img src="\2" alt="\1" loading="lazy">', text)
+        text = re.sub(r"\*\*(.+?)\*\*", r"<strong>\1</strong>", text)
+        text = re.sub(r"(?<!\*)\*(?!\*)(.+?)(?<!\*)\*(?!\*)", r"<em>\1</em>", text)
+        text = re.sub(r"\[(.+?)\]\((.+?)\)", r'<a href="\2">\1</a>', text)
+        return text
 
     def flush_para():
         if para_buffer:
@@ -114,42 +126,81 @@ def markdown_to_html(md):
                 html_parts.append(f"<p>{inline(text)}</p>")
             para_buffer.clear()
 
-    def flush_list():
-        if list_buffer:
-            items = "".join(f"<li>{inline(i)}</li>" for i in list_buffer)
+    def flush_ul():
+        if ul_buffer:
+            items = "".join(f"<li>{inline(i)}</li>" for i in ul_buffer)
             html_parts.append(f"<ul>{items}</ul>")
-            list_buffer.clear()
+            ul_buffer.clear()
 
-    def inline(text):
-        text = re.sub(r"\*\*(.+?)\*\*", r"<strong>\1</strong>", text)
-        text = re.sub(r"(?<!\*)\*(?!\*)(.+?)(?<!\*)\*(?!\*)", r"<em>\1</em>", text)
-        text = re.sub(r"\[(.+?)\]\((.+?)\)", r'<a href="\2">\1</a>', text)
-        return text
+    def flush_ol():
+        if ol_buffer:
+            items = "".join(f"<li>{inline(i)}</li>" for i in ol_buffer)
+            html_parts.append(f"<ol>{items}</ol>")
+            ol_buffer.clear()
+
+    def flush_quote():
+        if quote_buffer:
+            text = " ".join(quote_buffer).strip()
+            html_parts.append(f"<blockquote><p>{inline(text)}</p></blockquote>")
+            quote_buffer.clear()
+
+    def flush_all():
+        flush_para()
+        flush_ul()
+        flush_ol()
+        flush_quote()
 
     for raw_line in lines:
         line = raw_line.strip()
         if not line:
-            flush_para()
-            flush_list()
+            flush_all()
             continue
+
+        # A picture on its own line becomes a full-width figure.
+        img_match = re.match(r"^!\[(.*?)\]\((.+?)\)$", line)
+        if img_match:
+            flush_all()
+            alt, src = img_match.group(1), img_match.group(2)
+            html_parts.append(
+                f'<figure class="post-figure">'
+                f'<img src="{src}" alt="{alt}" loading="lazy"></figure>')
+            continue
+
         h_match = re.match(r"^(#{1,3})\s+(.*)$", line)
         if h_match:
-            flush_para()
-            flush_list()
-            level = len(h_match.group(1)) + 1  # markdown h1 -> page h2, etc.
-            level = min(level, 4)
+            flush_all()
+            level = min(len(h_match.group(1)) + 1, 4)  # md h1 -> page h2, etc.
             html_parts.append(f"<h{level}>{inline(h_match.group(2))}</h{level}>")
             continue
+
+        if line.startswith("> "):
+            flush_para()
+            flush_ul()
+            flush_ol()
+            quote_buffer.append(line[2:])
+            continue
+
+        ol_match = re.match(r"^\d+\.\s+(.*)$", line)
+        if ol_match:
+            flush_para()
+            flush_ul()
+            flush_quote()
+            ol_buffer.append(ol_match.group(1))
+            continue
+
         if line.startswith("- "):
             flush_para()
-            list_buffer.append(line[2:])
+            flush_ol()
+            flush_quote()
+            ul_buffer.append(line[2:])
             continue
-        flush_para() if list_buffer else None
-        flush_list()
+
+        flush_ul()
+        flush_ol()
+        flush_quote()
         para_buffer.append(line)
 
-    flush_para()
-    flush_list()
+    flush_all()
     return "\n".join(html_parts)
 
 
