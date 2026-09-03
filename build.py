@@ -299,7 +299,8 @@ def clean_output():
 
 
 def copy_static():
-    for folder in ("css", "js", "images"):
+    # "admin" ships the Sveltia CMS editor so it is reachable at /admin.
+    for folder in ("css", "js", "images", "admin"):
         src = os.path.join(ROOT, folder)
         if os.path.isdir(src):
             shutil.copytree(src, os.path.join(OUT, folder))
