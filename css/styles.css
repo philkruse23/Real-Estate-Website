@@ -225,6 +225,10 @@ a:focus-visible, button:focus-visible, input:focus-visible, textarea:focus-visib
   .hero { align-items: flex-end; min-height: min(75vh, 560px); }
   .hero .wrap { padding-bottom: var(--space-4); }
 }
+@media (min-width: 601px) {
+  /* Nudge the hero text box lower on desktop so it clears Phil's chin */
+  .hero .wrap { padding-bottom: var(--space-3); }
+}
 
 /* ---------- Split hero (photo intact, no overlay) ---------- */
 .split-hero {
