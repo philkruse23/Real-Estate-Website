@@ -2,9 +2,7 @@ backend:
   name: github
   repo: philkruse23/Real-Estate-Website
   branch: main
-  # IMPORTANT: replace this with your deployed sveltia-cms-auth Worker URL
-  # once you've completed the OAuth setup steps (see README.md).
-  base_url: https://REPLACE-WITH-YOUR-WORKER.workers.dev
+  base_url: https://sveltia-cms-auth.philkrusehomes.workers.dev
 
 media_folder: "images"
 public_folder: "/images"
