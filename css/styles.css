@@ -171,6 +171,18 @@ a:focus-visible, button:focus-visible, input:focus-visible, textarea:focus-visib
 }
 .main-nav a:hover, .main-nav a[aria-current="page"] { border-color: var(--gold); }
 .main-nav .btn { margin-left: var(--space-1); }
+/* Contact button: it's both .btn and .main-nav a, so restore full box + padding
+   that the plain-link rules above would otherwise strip. */
+.main-nav a.btn {
+  padding: 0.55rem 1.35rem;
+  border: 2px solid var(--navy);
+}
+.main-nav a.btn:hover,
+.main-nav a.btn[aria-current="page"] {
+  background: var(--navy);
+  border-color: var(--navy);
+  color: var(--white);
+}
 
 @media (max-width: 860px) {
   .nav-toggle { display: block; }
