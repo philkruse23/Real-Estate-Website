@@ -232,6 +232,14 @@ a:focus-visible, button:focus-visible, input:focus-visible, textarea:focus-visib
   text-shadow: 0 2px 6px rgba(0,0,0,0.85), 0 0 24px rgba(0,0,0,0.5);
 }
 .hero p { max-width: 50ch; font-size: 1.15rem; color: rgba(255,255,255,0.98); text-shadow: 0 1px 6px rgba(0,0,0,0.8), 0 0 16px rgba(0,0,0,0.5); }
+/* Hero eyebrows sit over photos (incl. light areas like a white shirt),
+   so give them a dark outline + halo for legibility on any background. */
+.hero .eyebrow {
+  text-shadow:
+    -1px -1px 0 rgba(0,0,0,0.75), 1px -1px 0 rgba(0,0,0,0.75),
+    -1px  1px 0 rgba(0,0,0,0.75), 1px  1px 0 rgba(0,0,0,0.75),
+    0 0 9px rgba(0,0,0,0.55);
+}
 .hero-actions { display: flex; gap: var(--space-2); flex-wrap: wrap; margin-top: var(--space-3); }
 @media (max-width: 600px) {
   .hero { align-items: flex-end; min-height: min(75vh, 560px); }
