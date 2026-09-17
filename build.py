@@ -351,7 +351,8 @@ def clean_output():
 
 def copy_static():
     # "admin" ships the Sveltia CMS editor so it is reachable at /admin.
-    for folder in ("css", "js", "images", "admin"):
+    # "guides" ships the lead-magnet PDFs (linked from Kit form redirects).
+    for folder in ("css", "js", "images", "admin", "guides"):
         src = os.path.join(ROOT, folder)
         if os.path.isdir(src):
             shutil.copytree(src, os.path.join(OUT, folder))
