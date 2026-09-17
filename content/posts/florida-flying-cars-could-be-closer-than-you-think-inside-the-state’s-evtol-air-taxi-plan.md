@@ -248,5 +248,3 @@ The aircraft will attract most of the attention, but the regulations, infrastruc
 **Would an air taxi between Tampa and Orlando be worth using if it meant avoiding Interstate 4? The answer may depend less on the technology than on price, convenience and how quickly Florida can build the network around it.**
 
 Text Phil Kruse at 407-782-8276 or [Contact Him Here](https://iamphilkruse.com/connect-with-me/)
-
-[convertkit form=6986373]
