@@ -318,6 +318,9 @@ article blockquote {
   align-items: center;
 }
 @media (max-width: 760px) { .newsletter-box { grid-template-columns: 1fr; } }
+/* On phones the embedded Kit form is wider than the box's inner padding,
+   so it pokes out the right edge — tighten the side padding so it fits. */
+@media (max-width: 560px) { .newsletter-box { padding: var(--space-3) var(--space-1); } }
 .newsletter-box--single {
   grid-template-columns: 1fr;
   max-width: 640px;
