@@ -3,7 +3,7 @@ title: UCF’s $90M Roth Tower Is Built for More Than Football
 date: 2026-09-23
 category: Orlando Life
 teaser: UCF’s $90 million Roth Tower adds luxury suites, premium seating, event space and upgraded broadcast facilities designed to generate year-round revenue and boost Orlando tourism.
-image: /images/ucf-tower.png
+image: /images/Title.png
 ---
 
 > “We built this as an events space, and we’re programming it now as we speak.”
