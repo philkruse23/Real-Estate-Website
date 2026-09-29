@@ -244,6 +244,36 @@ a:focus-visible, button:focus-visible, input:focus-visible, textarea:focus-visib
 @media (max-width: 600px) {
   .hero { align-items: flex-end; min-height: min(75vh, 560px); }
   .hero .wrap { padding-bottom: var(--space-4); }
+
+  /* Homepage hero: on phones, stack the photo above a solid navy text
+     panel so Phil's face is never hidden behind the overlay. Desktop
+     (>=601px) keeps the text-over-photo treatment untouched. */
+  .hero--stacked {
+    background-image: none !important;
+    background: var(--navy);
+    display: flex;
+    flex-direction: column;
+    align-items: stretch;
+    min-height: 0;
+    padding: 0;
+  }
+  .hero--stacked::before {
+    content: "";
+    display: block;
+    width: 100%;
+    aspect-ratio: 1 / 1;
+    background: url('/images/blog-hero-orlando.jpg') center 16% / cover no-repeat;
+  }
+  .hero--stacked .wrap {
+    padding-top: var(--space-4);
+    padding-bottom: var(--space-5);
+  }
+  .hero--stacked .hero-textbox {
+    background: transparent;
+    backdrop-filter: none;
+    -webkit-backdrop-filter: none;
+    padding: 0;
+  }
 }
 @media (min-width: 601px) {
   /* Nudge the hero text box lower on desktop so it clears Phil's chin */
