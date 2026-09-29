@@ -356,9 +356,10 @@ def copy_static():
         src = os.path.join(ROOT, folder)
         if os.path.isdir(src):
             shutil.copytree(src, os.path.join(OUT, folder))
-    robots = os.path.join(ROOT, "robots.txt")
-    if os.path.isfile(robots):
-        shutil.copy(robots, os.path.join(OUT, "robots.txt"))
+    for root_file in ("robots.txt", "llms.txt"):
+        src = os.path.join(ROOT, root_file)
+        if os.path.isfile(src):
+            shutil.copy(src, os.path.join(OUT, root_file))
 
 
 def build_sitemap(built_paths):
