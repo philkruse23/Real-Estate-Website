@@ -3,7 +3,7 @@ title: 'Florida Flying Cars Could Be Closer Than You Think: Inside the State’s
 date: 2026-09-17
 category: Orlando Life
 teaser: Florida is preparing for the future of flying taxis with eVTOL testing, new aerial corridors, vertiports and workforce programs that could reshape transportation across the state.
-image: /images/Florida Flying Cars.png
+image: /images/florida-flying-cars.jpg
 ---
 
 > _“You could start to see taxi service with these vertical lift platforms probably within the next year.”_
