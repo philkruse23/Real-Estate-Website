@@ -1,7 +1,7 @@
 ---
 title: 'Grande Lakes Orlando Sale: What the $1.38 Billion Deal Says About Orlando’s Luxury Hotel Market'
 date: 2026-09-25
-category: Orlando Life
+category: Orlando Life, Market Update
 teaser: The Grande Lakes Orlando sale closed at $1.38 billion. See what the record resort deal reveals about luxury hotels and investment in Orlando.
 image: /images/grand-lakes-orlando.png
 ---
