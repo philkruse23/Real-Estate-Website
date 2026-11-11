@@ -6,7 +6,7 @@ teaser: Orlando advances a $35.7M parking garage near Inter&Co Stadium, potentia
 image: /images/ms8kwgaaledur2ktjoow.webp
 ---
 
-> "If you built a garage, mixed-use could come." — Damien Madsen, founder of MadsenSmith Property Services
+> _"If you built a garage, mixed-use could come." — Damien Madsen, founder of MadsenSmith Property Services_
 
 Orlando is moving forward with a **$35.7 million parking garage near Inter&Co Stadium**, a major infrastructure investment that could create more than 800 parking spaces and open the door for future mixed-use development in downtown Orlando.
 
