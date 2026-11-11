@@ -6,7 +6,7 @@ teaser: Brevard Zoo's $140 million Bowen Aquarium secures a Port Canaveral lease
 image: /images/shark-habitat.jpg
 ---
 
-> "The overpass is a concern for us, it just is." Milo Zonka, East Coast Zoological Foundation Board Chair
+> _"The overpass is a concern for us, it just is." Milo Zonka, East Coast Zoological Foundation Board Chair_
 
 A $140 million aquarium designed to bring marine conservation, education, and tourism to Florida's Space Coast is moving forward. However, a proposed four-lane elevated highway could create significant challenges for the project's future.
 
