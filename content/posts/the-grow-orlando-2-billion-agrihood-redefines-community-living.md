@@ -6,7 +6,7 @@ teaser: Discover The Grow Orlando, a $2 billion agrihood featuring 2,200 planned
 image: /images/3oc9MOY7Ok7KCyzYSbtvJgzNIlk2ZG1YKn4EuUrhutN5fSDHeFGrjz0rriM92WYpLcPXXG_RJUa_oxTpNcd2oMgZwaGs1GxYjXrgzd5D4DcRaEPISYEdJDsBOg2R1OVrHE2c4DmQjlX_lJ-XlIvMbb7yHCeKtjUfMhlKWTP_TYXVNgGSaLSNnH8JW6WGbmcL.jpeg
 ---
 
-> “I went to the woods because I wished to live deliberately.”— Henry David Thoreau, _Walden_
+> _“I went to the woods because I wished to live deliberately.”— Henry David Thoreau, Walden_
 
 What if modern neighborhoods could offer more than beautiful homes and convenient amenities? Imagine living in a community where fresh produce grows nearby, nature trails connect neighborhoods, and shared gardens bring people together. That vision is taking shape at **The Grow Orlando**, a $2 billion master-planned development in East Orange County. Combining residential living with agriculture, environmental preservation, and recreational spaces, The Grow introduces a different approach to suburban development. As Central Florida continues to expand, this innovative "agrihood" could influence how future communities are designed.
 
