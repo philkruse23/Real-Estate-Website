@@ -6,7 +6,7 @@ teaser: Caribe Royale Orlando announces up to $20 million in resort upgrades, ex
 image: /images/venetian-chop-house-main-dining-room.jpg
 ---
 
-> “Every few years, properties need to be refreshed to stay competitive. That cycle never really stops.” Charlie Dorr, Director of Business Development, PCL Construction
+> _“Every few years, properties need to be refreshed to stay competitive. That cycle never really stops.” Charlie Dorr, Director of Business Development, PCL Construction_
 
 Orlando's hospitality industry continues to experience significant reinvestment as major resorts upgrade their facilities to meet evolving guest expectations and maintain their competitive positions.
 
