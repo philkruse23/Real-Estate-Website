@@ -6,7 +6,7 @@ teaser: Hillsborough County has approved the Tampa Bay Rays’ $2.36 billion sta
 image: /images/orlando-dreamers.jpeg
 ---
 
-> “Today’s vote represents an extraordinary milestone not simply for the Rays or for a ballpark, but for the future of Tampa and the entire Tampa Bay region.”
+> _“Today’s vote represents an extraordinary milestone not simply for the Rays or for a ballpark, but for the future of Tampa and the entire Tampa Bay region.”_
 
 That statement from Tampa Bay Rays Managing Partner Patrick Zalupski captures just how much is riding on Hillsborough County’s approval of the team’s proposed $2.36 billion stadium.
 
