@@ -6,7 +6,7 @@ teaser: Orange County faces tough choices over $1.1 billion in proposed tourism 
 image: /images/Title.jpg
 ---
 
-> “Funding all the projects … is not within the county’s estimated capacity while maintaining the target reserve level.”
+> _“Funding all the projects … is not within the county’s estimated capacity while maintaining the target reserve level.”_
 
 That line gets right to the heart of [Orange County’](https://www.bizjournals.com/orlando/search/results?q=Orange+County&search__button=)s latest debate over Tourist Development Tax spending.
 
@@ -16,7 +16,7 @@ Now comes the harder part: deciding how much [Orange County](https://www.bizjour
 
 To me, that is the real story here.
 
-This is no longer simply a conversation about which projects sound worthwhile. It is a conversation about **how** [**Orange County**](https://www.bizjournals.com/orlando/search/results?q=Orange+County&search__button=) **balances ambitious tourism investments with the need to protect its financial reserves**.
+This is no longer simply a conversation about which projects sound worthwhile. It is a conversation about **how** **[Orange County](https://www.bizjournals.com/orlando/search/results?q=Orange+County&search__button=)** **balances ambitious tourism investments with the need to protect its financial reserves**.
 
 Text Phil Kruse at 407-782-8276 or [Contact Him Here](https://iamphilkruse.com/connect-with-me/)
 
