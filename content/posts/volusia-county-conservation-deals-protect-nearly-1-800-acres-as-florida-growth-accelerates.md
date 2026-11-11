@@ -6,7 +6,7 @@ teaser: Nearly 1,800 acres in Volusia County have been protected through two maj
 image: /images/orlando-conservation-land.jpg
 ---
 
-> “For us, it’s about striking a balance.”
+> _“For us, it’s about striking a balance.”_
 
 That comment from Daryl Carter, president of Maury L. Carter and Associates, gets to the heart of what is happening in Volusia County.
 
