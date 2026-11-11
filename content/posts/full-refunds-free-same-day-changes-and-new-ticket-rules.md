@@ -6,7 +6,7 @@ teaser: Brightline introduces Flex fares with full refunds, free same-day train 
 image: /images/01-brightline-orlando-station-entrance.jpg
 ---
 
-> “We understand that travel plans can change, sometimes unexpectedly. That's why we're committed to offering fare options that provide our guests with the flexibility they need to book with confidence.” — Julie Sharenow, Vice President of Sales, Brightline Trains Florida
+> _“We understand that travel plans can change, sometimes unexpectedly. That's why we're committed to offering fare options that provide our guests with the flexibility they need to book with confidence.” — Julie Sharenow, Vice President of Sales, Brightline Trains Florida_
 
 Travel plans do not always go as expected. Flights get delayed, business meetings run longer than anticipated, and vacation itineraries sometimes require last-minute adjustments. Brightline is addressing these challenges with a new fare option designed to give passengers greater flexibility when traveling between Orlando and South Florida.
 
