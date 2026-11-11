@@ -6,7 +6,7 @@ teaser: Downtown Orlando infrastructure upgrades are reshaping Magnolia Avenue w
 image: /images/Magnolia_Ave_4.jpg
 ---
 
-> “We’re definitely on an upswing; I think today is a testament to that.” Frank Vertolli
+> _“We’re definitely on an upswing; I think today is a testament to that.” Frank Vertolli_
 
 For the first time in roughly 70 years, drivers can travel both directions on a major stretch of Magnolia Avenue in downtown Orlando.
 
