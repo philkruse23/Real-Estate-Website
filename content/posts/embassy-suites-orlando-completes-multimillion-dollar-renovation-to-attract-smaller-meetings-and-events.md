@@ -6,7 +6,7 @@ teaser: Embassy Suites Orlando ICON Park completes a multimillion-dollar renovat
 image: /images/mcoores-new-front-exterior-twilight-2800x1536.webp
 ---
 
-> "We identified a gap in the market for smaller groups that deserve the same level of attention and service typically reserved for larger events." John Lyon, General Manager, Embassy Suites Orlando International Drive ICON Park
+> _"We identified a gap in the market for smaller groups that deserve the same level of attention and service typically reserved for larger events." John Lyon, General Manager, Embassy Suites Orlando International Drive ICON Park_
 
 Bigger isn't always better, especially when it comes to corporate meetings and events in Orlando.
 
