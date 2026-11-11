@@ -6,7 +6,7 @@ teaser: Clermont approves a $625,000 purchase of 42 acres near Lake Felter Park 
 image: /images/gettyimages-1125795275.jpg
 ---
 
-> “Business doesn't wait for government.” — Clermont City Manager Rick Van Wagner
+> _“Business doesn't wait for government.” — Clermont City Manager Rick Van Wagner_
 
 As Clermont continues to experience significant population growth and expanding commercial development, city officials are taking steps to secure land for future recreational opportunities and environmental preservation.
 
