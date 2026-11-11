@@ -6,7 +6,7 @@ teaser: Hillstone Restaurant Group acquires a $1.1 million property in Winter Pa
 image: /images/1898074_824284307593331_3478061632500176042_n.jpg
 ---
 
-> "Complete demolition for future parking lot." — Description from the demolition permit filed with the city of Winter Park.
+> _"Complete demolition for future parking lot." — Description from the demolition permit filed with the city of Winter Park._
 
 A $1.1 million real estate investment could soon make visiting one of Winter Park's most popular waterfront restaurants more convenient.
 
