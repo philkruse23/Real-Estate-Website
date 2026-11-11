@@ -6,7 +6,7 @@ teaser: Florida tourism remains near record levels, but changing traveler behavi
 image: /images/Central-Florida-Tourism-3.avif
 ---
 
-> “Travelers are pickier and booking later.”
+> _“Travelers are pickier and booking later.”_
 
 That observation from Visit Florida President and CEO Bryan Griffin may be one of the most important signals for Florida’s tourism industry in 2026.
 
