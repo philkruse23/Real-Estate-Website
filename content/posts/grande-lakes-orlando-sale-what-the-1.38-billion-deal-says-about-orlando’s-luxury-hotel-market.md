@@ -6,7 +6,7 @@ teaser: The Grande Lakes Orlando sale closed at $1.38 billion. See what the reco
 image: /images/grand-lakes-orlando.png
 ---
 
-> “Orlando continues to become more of a luxury destination.”
+> _“Orlando continues to become more of a luxury destination.”_
 
 That observation may be one of the most important takeaways from the **Grande Lakes Orlando sale**.
 
