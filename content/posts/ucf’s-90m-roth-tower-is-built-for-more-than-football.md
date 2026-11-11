@@ -6,7 +6,7 @@ teaser: UCF’s $90 million Roth Tower adds luxury suites, premium seating, even
 image: /images/Title.png
 ---
 
-> “We built this as an events space, and we’re programming it now as we speak.”
+> _“We built this as an events space, and we’re programming it now as we speak.”_
 
 That comment from UCF Vice President and Director of Athletics [Terry Mohajir](https://ucfknights.com/staff/terry-mohajir) may be the most important point to understand about the University of Central Florida’s new $90 million Roth Tower.
 
@@ -29,7 +29,7 @@ Text Phil Kruse at 407-782-8276 or [Contact Him Here](https://iamphilkruse.com/c
 - New television and radio broadcast facilities could improve UCF's ability to host nationally televised games.
 - UCF is targeting additional revenue from **corporate events, weddings, proms and other gatherings**.
 - The project was supported by Orange County **Tourist Development Tax** funding.
-- UCF is pursuing another [**$119 million**](https://www.bizjournals.com/orlando/news/2026/08/05/ucf-tdt-soccer-football-track-field-softball.html) for athletics broadcast upgrades and renovations to other sports facilities.
+- UCF is pursuing another **[$119 million](https://www.bizjournals.com/orlando/news/2026/08/05/ucf-tdt-soccer-football-track-field-softball.html)** for athletics broadcast upgrades and renovations to other sports facilities.
 
 Text Phil Kruse at 407-782-8276 or [Contact Him Here](https://iamphilkruse.com/connect-with-me/)
 
