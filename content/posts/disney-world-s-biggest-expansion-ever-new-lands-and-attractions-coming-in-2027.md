@@ -6,7 +6,7 @@ teaser: Disney is moving ahead with its largest Walt Disney World expansion to d
 image: /images/disney-expansion.jpg
 ---
 
-> “Villains Land is one of the most ambitious lands we’ve ever created.”
+> _“Villains Land is one of the most ambitious lands we’ve ever created.”_
 
 Walt Disney World is preparing for a sweeping transformation as Disney moves ahead with what Imagineering executives describe as the largest slate of expansion projects in the resort’s history.
 
