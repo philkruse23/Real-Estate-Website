@@ -6,7 +6,7 @@ teaser: Toys “R” Us returns to Oviedo Mall amid a nationwide expansion and r
 image: /images/oviedo-mall_900xx6000-3375-0-313.jpg
 ---
 
-> “Getting to welcome Toys ‘R’ Us to Oviedo Mall year-round feels incredibly special.” — Josh Gunderson, Oviedo Mall
+> _“Getting to welcome Toys ‘R’ Us to Oviedo Mall year-round feels incredibly special.” — Josh Gunderson, Oviedo Mall_
 
 Toys “R” Us is making a comeback in Central Florida with a new standalone store at Oviedo Mall, bringing nostalgia and a fresh shopping experience to a new generation.
 
