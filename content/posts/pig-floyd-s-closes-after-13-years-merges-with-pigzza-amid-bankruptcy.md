@@ -6,7 +6,7 @@ teaser: Pig Floyd's closes its original Orlando location after 13 years, merging
 image: /images/pig-floyds-pigzza-sign-orlando.jpg
 ---
 
-> "I think it's a moment where businesses need to consolidate to survive." — Thomas Ward, founder of Pig Floyd's and Pigzza
+> _"I think it's a moment where businesses need to consolidate to survive." — Thomas Ward, founder of Pig Floyd's and Pigzza_
 
 After 13 years in Orlando, **Pig Floyd's has closed its original location and merged with Pigzza** as owner Thomas Ward works to navigate rising restaurant costs and financial challenges.
 
