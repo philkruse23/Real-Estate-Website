@@ -6,7 +6,7 @@ teaser: Grand Bohemian Orlando is now Hotel Beauden after 25 years. Explore the 
 image: /images/grand-bohemian-orlando-orlando-florida-103685-1.webp
 ---
 
-> “Hotel Beauden reflects where Downtown Orlando is today creative, confident and constantly evolving.”— Benjamin McCarney, General Manager
+> _“Hotel Beauden reflects where Downtown Orlando is today creative, confident and constantly evolving.”— Benjamin McCarney, General Manager_
 
 After 25 years as one of downtown Orlando's most recognizable luxury hotels, the Grand Bohemian Orlando has entered a new chapter. Effective September 1, 2026, the iconic property at 325 S. Orange Avenue officially became **Hotel Beauden (pronounced Boh-den)**.
 
