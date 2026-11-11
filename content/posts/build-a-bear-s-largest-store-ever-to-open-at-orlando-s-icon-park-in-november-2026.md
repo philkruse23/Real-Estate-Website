@@ -6,7 +6,7 @@ teaser: Build-A-Bear is opening its largest flagship store at Orlando's ICON Par
 image: /images/bab-icon-exteriorsw.jpg
 ---
 
-> “Our Icon Park workshop represents our most ambitious experience yet, a place where families can step into the world of Build-A-Bear, share meaningful moments together and create memories that last well beyond their visit.” Chris Hurt, CEO of Build-A-Bear Workshop
+> _“Our Icon Park workshop represents our most ambitious experience yet, a place where families can step into the world of Build-A-Bear, share meaningful moments together and create memories that last well beyond their visit.” Chris Hurt, CEO of Build-A-Bear Workshop_
 
 Build-A-Bear Workshop is preparing to unveil its largest store ever at **ICON Park in Orlando, Florida, in November 2026**, introducing a three-story flagship destination featuring a rooftop terrace, interactive dessert shop, premium plush design studio, and expanded personalization experiences.
 
