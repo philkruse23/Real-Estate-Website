@@ -6,7 +6,7 @@ teaser: Bishop Moore Catholic High School begins construction on a $21 million C
 image: /images/bmchs-center-for-the-arts-ext-01-h.jpg
 ---
 
-> “Rising enrollment has placed significant pressure on our facilities.”
+> _“Rising enrollment has placed significant pressure on our facilities.”_
 
 Bishop Moore Catholic High School is investing more than **$21 million in a new Center for the Arts** as the Orlando private school expands its academic programs and responds to increasing student enrollment.
 
